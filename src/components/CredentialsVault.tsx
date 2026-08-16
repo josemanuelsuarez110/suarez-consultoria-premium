@@ -196,7 +196,7 @@ export const CredentialsVault = () => {
               className={cn(
                 'px-6 py-2 rounded-full text-sm font-semibold transition-all border',
                 filter === category
-                  ? 'bg-cyber-blue border-cyber-blue text-slate-950 shadow-[0_0_20px_rgba(14,165,233,0.3)]'
+                  ? 'bg-corporate-blue border-corporate-blue text-slate-950 shadow-[0_0_20px_rgba(14,165,233,0.3)]'
                   : 'bg-white/5 border-white/10 text-slate-400 hover:bg-white/10'
               )}
             >
@@ -215,21 +215,21 @@ export const CredentialsVault = () => {
               className="glass-card p-6 relative group overflow-hidden"
             >
               <div className="flex justify-between items-start mb-6">
-                <div className="p-3 rounded-lg bg-white/5 border border-white/10 text-brand-blue">
+                <div className="p-3 rounded-lg bg-white/5 border border-white/10 text-corporate-blue">
                   {cert.type === 'Academia' ? (
                     <Award className="w-6 h-6" />
                   ) : (
-                    <ShieldCheck className="w-6 h-6 text-cyber-blue" />
+                    <ShieldCheck className="w-6 h-6 text-corporate-blue" />
                   )}
                 </div>
 
-                <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[10px] font-bold text-brand-emerald uppercase tracking-wider">
+                <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-[10px] font-bold text-accent-gold uppercase tracking-wider">
                   <CheckCircle2 className="w-3 h-3" />
                   {cert.status}
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-white mb-1 group-hover:text-cyber-blue transition-colors">
+              <h3 className="text-xl font-bold text-white mb-1 group-hover:text-yellow-300 transition-colors">
                 {cert.title}
               </h3>
 
@@ -247,7 +247,7 @@ export const CredentialsVault = () => {
                     href={cert.fileUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-brand-blue font-semibold flex items-center gap-1 hover:text-cyber-blue transition-colors"
+                    className="text-xs text-accent-gold font-semibold flex items-center gap-1 hover:text-yellow-300 transition-colors"
                   >
                     Ver Certificado
                     <FileCheck className="w-4 h-4" />
@@ -260,7 +260,7 @@ export const CredentialsVault = () => {
               </div>
 
               {/* Hover Glow Effect */}
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-cyber-blue/20 to-brand-emerald/20 opacity-0 group-hover:opacity-100 transition-opacity blur shadow-xl -z-10" />
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-corporate-blue/20 to-accent-gold/20 opacity-0 group-hover:opacity-100 transition-opacity blur shadow-xl -z-10" />
             </motion.div>
           </Reveal>
         ))}

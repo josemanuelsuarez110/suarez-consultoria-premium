@@ -27,8 +27,8 @@ function App() {
         href="#home"
         className="group flex items-center gap-3"
       >
-        <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10">
-          <span className="font-black text-cyan-300">S</span>
+        <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-blue-400/20 bg-blue-400/10">
+          <span className="font-black text-blue-300">S</span>
         </div>
 
         <div className="hidden sm:block">
@@ -53,7 +53,7 @@ function App() {
           <a
             key={id}
             href={`#${id}`}
-            className="text-[11px] font-bold uppercase tracking-wider text-slate-400 transition-colors hover:text-cyan-300"
+            className="text-[11px] font-bold uppercase tracking-wider text-slate-400 transition-colors hover:text-blue-300"
           >
             {label}
           </a>
@@ -63,7 +63,7 @@ function App() {
       {/* CTA */}
       <a
         href="#contact"
-        className="group inline-flex items-center gap-2 rounded-xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-2.5 text-[10px] font-black uppercase tracking-wider text-cyan-300 transition-all hover:bg-cyan-400 hover:text-slate-950"
+        className="group inline-flex items-center gap-2 rounded-xl border border-blue-400/20 bg-blue-400/10 px-4 py-2.5 text-[10px] font-black uppercase tracking-wider text-blue-300 transition-all hover:bg-blue-400 hover:text-slate-950"
       >
         Contacto
         <span className="transition-transform group-hover:translate-x-0.5">
@@ -85,11 +85,11 @@ function App() {
 
       {/* Scroll Progress Indicator (Left Side) */}
       <div className="fixed left-8 top-1/2 -translate-y-1/2 hidden xl:flex flex-col items-center gap-4 py-8 pointer-events-none opacity-20">
-        <div className="w-px h-20 bg-gradient-to-t from-cyber-blue to-transparent" />
+        <div className="w-px h-20 bg-gradient-to-t from-corporate-blue to-transparent" />
         <span className="[writing-mode:vertical-lr] text-[10px] uppercase tracking-[0.4em] font-bold text-slate-500 rotate-180">
           Scroll for Strategy
         </span>
-        <div className="w-px h-20 bg-gradient-to-b from-cyber-blue to-transparent" />
+        <div className="w-px h-20 bg-gradient-to-b from-corporate-blue to-transparent" />
       </div>
     </main>
   )

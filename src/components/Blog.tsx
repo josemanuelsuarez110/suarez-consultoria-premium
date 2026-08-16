@@ -34,13 +34,13 @@ export const Blog = () => {
         <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-              Insights <span className="text-cyber-blue">2026.</span>
+              Insights <span className="text-corporate-blue">2026.</span>
             </h2>
             <p className="text-slate-400">Análisis prospectivo sobre tecnología, finanzas y seguridad.</p>
           </div>
           <motion.button 
             whileHover={{ x: 5 }}
-            className="flex items-center gap-2 text-cyber-blue font-bold text-sm uppercase tracking-widest"
+            className="flex items-center gap-2 text-corporate-blue font-bold text-sm uppercase tracking-widest"
           >
             Ver todos los artículos <ArrowUpRight className="w-4 h-4" />
           </motion.button>
@@ -65,7 +65,7 @@ export const Blog = () => {
                 </div>
               </div>
               <div className="text-xs text-slate-500 mb-2">{post.date}</div>
-              <h3 className="text-xl font-bold text-white group-hover:text-cyber-blue transition-colors leading-tight">
+              <h3 className="text-xl font-bold text-white group-hover:text-corporate-blue transition-colors leading-tight">
                 {post.title}
               </h3>
             </motion.div>

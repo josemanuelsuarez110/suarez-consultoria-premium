@@ -37,7 +37,7 @@ export const ServicesMatrix = () => {
         <div className="flex flex-col md:flex-row justify-between items-end gap-6 mb-16">
           <div className="max-w-2xl">
             <h2 className="text-4xl md:text-6xl font-extrabold mb-6">
-              Matriz de <span className="text-cyber-blue">Servicios.</span>
+              Matriz de <span className="text-corporate-blue">Servicios.</span>
             </h2>
             <p className="text-slate-400 text-lg">
               Soluciones modulares diseñadas para organizaciones que no solo buscan seguridad, sino una arquitectura empresarial sólida y resiliente.
@@ -54,10 +54,10 @@ export const ServicesMatrix = () => {
           <Reveal key={index} delay={index * 0.15}>
             <div className="group relative glass-card p-10 min-h-[450px] flex flex-col justify-between hover:border-white/20 transition-all duration-500">
               <div>
-                <div className="mb-8 p-4 w-fit rounded-2xl bg-white/5 border border-white/10 text-white group-hover:scale-110 group-hover:bg-cyber-blue group-hover:text-slate-950 transition-all duration-500">
+                <div className="mb-8 p-4 w-fit rounded-2xl bg-white/5 border border-white/10 text-white group-hover:scale-110 group-hover:bg-corporate-blue group-hover:text-slate-950 transition-all duration-500">
                   {service.icon}
                 </div>
-                <div className="text-xs font-bold text-cyber-blue uppercase tracking-widest mb-2">{service.subtitle}</div>
+                <div className="text-xs font-bold text-corporate-blue uppercase tracking-widest mb-2">{service.subtitle}</div>
                 <h3 className="text-3xl font-bold text-white mb-4 leading-tight">{service.title}</h3>
                 <p className="text-slate-400 leading-relaxed mb-8">
                   {service.description}
@@ -67,7 +67,7 @@ export const ServicesMatrix = () => {
               <ul className="space-y-3">
                 {service.features.map((feature, fIndex) => (
                   <li key={fIndex} className="flex items-center gap-3 text-sm text-slate-300">
-                    <div className="w-1.5 h-1.5 rounded-full bg-brand-emerald shadow-[0_0_8px_rgba(16,185,129,0.5)]" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-accent-gold shadow-[0_0_8px_rgba(16,185,129,0.5)]" />
                     {feature}
                   </li>
                 ))}
@@ -75,8 +75,8 @@ export const ServicesMatrix = () => {
 
               {/* Decorative Corner */}
               <div className="absolute top-0 right-0 w-20 h-20 overflow-hidden rounded-tr-2xl">
-                <div className="absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-cyber-blue/50 to-transparent group-hover:h-full transition-all duration-500" />
-                <div className="absolute top-0 right-0 w-full h-[2px] bg-gradient-to-l from-cyber-blue/50 to-transparent group-hover:w-full transition-all duration-500" />
+                <div className="absolute top-0 right-0 w-[2px] h-full bg-gradient-to-b from-corporate-blue/50 to-transparent group-hover:h-full transition-all duration-500" />
+                <div className="absolute top-0 right-0 w-full h-[2px] bg-gradient-to-l from-corporate-blue/50 to-transparent group-hover:w-full transition-all duration-500" />
               </div>
             </div>
           </Reveal>

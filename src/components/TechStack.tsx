@@ -29,7 +29,7 @@ export const TechStack = () => {
               whileHover={{ scale: 1.05 }}
               className="glass-card p-6 flex flex-col items-center text-center group border-white/5"
             >
-              <div className="mb-4 text-slate-400 group-hover:text-cyber-blue transition-colors">
+              <div className="mb-4 text-slate-400 group-hover:text-corporate-blue transition-colors">
                 {item.icon}
               </div>
               <div className="text-lg font-bold text-white mb-1">{item.name}</div>
@@ -41,7 +41,7 @@ export const TechStack = () => {
 
       {/* Skills Radar / Visualization (Mockup) */}
       <Reveal delay={0.4}>
-        <div className="mt-16 glass-card p-8 border-cyber-blue/20 bg-cyber-blue/5">
+        <div className="mt-16 glass-card p-8 border-corporate-blue/20 bg-corporate-blue/5">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 space-y-6">
               <h3 className="text-2xl font-bold">Arquitectura de Decisión</h3>
@@ -59,8 +59,8 @@ export const TechStack = () => {
             <div className="relative w-full lg:w-1/3 aspect-square flex items-center justify-center">
               {/* Decorative Circle Logic/Glow */}
               <div className="absolute inset-0 rounded-full border-2 border-dashed border-white/10 animate-[spin_20s_linear_infinite]" />
-              <div className="absolute inset-4 rounded-full border border-cyber-blue/20" />
-              <div className="text-cyber-blue relative z-10">
+              <div className="absolute inset-4 rounded-full border border-corporate-blue/20" />
+              <div className="text-corporate-blue relative z-10">
                 <Db className="w-20 h-20 opacity-50 blur-sm absolute inset-0" />
                 <Db className="w-20 h-20" />
               </div>

@@ -7,12 +7,12 @@ export const CTA = () => {
   return (
     <SectionContainer id="contact" className="relative group">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-cyber-blue/20 rounded-full blur-[120px] -z-10 group-hover:bg-brand-emerald/10 transition-colors duration-1000" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-corporate-blue/20 rounded-full blur-[120px] -z-10 group-hover:bg-accent-gold/10 transition-colors duration-1000" />
       
       <div className="glass-card p-12 lg:p-20 text-center border-white/20">
         <Reveal>
           <div className="flex justify-center mb-8">
-            <div className="p-4 rounded-full bg-cyber-blue/10 border border-cyber-blue/20 text-cyber-blue animate-bounce">
+            <div className="p-4 rounded-full bg-corporate-blue/10 border border-corporate-blue/20 text-corporate-blue animate-bounce">
               <ShieldCheck className="w-10 h-10" />
             </div>
           </div>
@@ -20,7 +20,7 @@ export const CTA = () => {
 
         <Reveal delay={0.1}>
           <h2 className="text-4xl md:text-6xl font-black mb-6 tracking-tight">
-            ¿LISTO PARA <span className="text-cyber-blue">ASEGURAR</span> EL SIGUIENTE NIVEL?
+            ¿LISTO PARA <span className="text-corporate-blue">ASEGURAR</span> EL SIGUIENTE NIVEL?
           </h2>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-12">
             Ya sea una auditoría de sistemas ISO 27001, una prueba de penetración o una estrategia financiera híbrida, estoy aquí para construir el futuro de tu organización.
@@ -37,7 +37,7 @@ export const CTA = () => {
                   target="_blank"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="flex items-center gap-3 px-10 py-5 rounded-2xl bg-brand-emerald text-slate-950 font-bold text-xl hover:shadow-[0_0_30px_rgba(16,185,129,0.4)] transition-all"
+                  className="flex items-center gap-3 px-10 py-5 rounded-2xl bg-accent-gold text-slate-950 font-bold text-xl hover:shadow-[0_0_30px_rgba(16,185,129,0.4)] transition-all"
                 >
                   <MessageSquare className="w-6 h-6" /> WhatsApp (829)
                 </motion.a>
@@ -85,13 +85,13 @@ export const CTA = () => {
         <Reveal delay={0.4}>
           <div className="mt-16 flex flex-wrap justify-center gap-8 text-slate-500 uppercase tracking-[0.2em] text-xs font-bold">
             <div className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-blue" /> Systems Engineering
+              <span className="w-1.5 h-1.5 rounded-full bg-corporate-blue" /> Systems Engineering
             </div>
             <div className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-brand-emerald" /> Certified Public Accountant
+              <span className="w-1.5 h-1.5 rounded-full bg-accent-gold" /> Certified Public Accountant
             </div>
             <div className="flex items-center gap-2">
-              <span className="w-1.5 h-1.5 rounded-full bg-cyber-blue" /> Ethical Hacking
+              <span className="w-1.5 h-1.5 rounded-full bg-corporate-blue" /> Ethical Hacking
             </div>
           </div>
         </Reveal>
@@ -107,7 +107,7 @@ export const CTA = () => {
           <div className="space-y-6">
             <div className="flex flex-col">
               <span className="text-xl font-black tracking-widest text-white">SUAREZ</span>
-              <span className="text-[10px] text-cyber-blue font-bold uppercase">Consultoría & Auditoría</span>
+              <span className="text-[10px] text-corporate-blue font-bold uppercase">Consultoría & Auditoría</span>
             </div>
             <p className="text-sm text-slate-500 leading-relaxed">
               Liderazgo técnico y financiero comprometido con la excelencia ISO 27001 y la optimización de procesos mediante IA.
@@ -117,30 +117,30 @@ export const CTA = () => {
           <div>
             <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">Servicios</h4>
             <ul className="space-y-4 text-sm text-slate-500">
-              <li><a href="#services" className="hover:text-cyber-blue transition-colors">Auditoría IT</a></li>
-              <li><a href="#services" className="hover:text-cyber-blue transition-colors">Estrategia Fiscal</a></li>
-              <li><a href="#services" className="hover:text-cyber-blue transition-colors">Hacking Ético</a></li>
-              <li><a href="#services" className="hover:text-cyber-blue transition-colors">Pentesting</a></li>
+              <li><a href="#services" className="hover:text-corporate-blue transition-colors">Auditoría IT</a></li>
+              <li><a href="#services" className="hover:text-corporate-blue transition-colors">Estrategia Fiscal</a></li>
+              <li><a href="#services" className="hover:text-corporate-blue transition-colors">Hacking Ético</a></li>
+              <li><a href="#services" className="hover:text-corporate-blue transition-colors">Pentesting</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">Gobernanza</h4>
             <ul className="space-y-4 text-sm text-slate-500">
-              <li><a href="#" className="hover:text-cyber-blue transition-colors">ISO 27001</a></li>
-              <li><a href="#" className="hover:text-cyber-blue transition-colors">Cumplimiento Fiscal</a></li>
-              <li><a href="#" className="hover:text-cyber-blue transition-colors">Políticas de Seguridad</a></li>
-              <li><a href="#" className="hover:text-cyber-blue transition-colors">Ética de Consultoría</a></li>
+              <li><a href="#" className="hover:text-corporate-blue transition-colors">ISO 27001</a></li>
+              <li><a href="#" className="hover:text-corporate-blue transition-colors">Cumplimiento Fiscal</a></li>
+              <li><a href="#" className="hover:text-corporate-blue transition-colors">Políticas de Seguridad</a></li>
+              <li><a href="#" className="hover:text-corporate-blue transition-colors">Ética de Consultoría</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-bold mb-6 text-sm uppercase tracking-widest">Conectar</h4>
             <ul className="space-y-4 text-sm text-slate-500">
-              <li><a href="tel:8294613778" className="hover:text-cyber-blue transition-colors">829-461-3778</a></li>
-              <li><a href="mailto:josemanuelsuarez110@gmail.com" className="hover:text-cyber-blue transition-colors">Email Oficial</a></li>
-              <li><a href="#" className="hover:text-cyber-blue transition-colors">LinkedIn</a></li>
-              <li><a href="#" className="hover:text-cyber-blue transition-colors">GitHub</a></li>
+              <li><a href="tel:8294613778" className="hover:text-corporate-blue transition-colors">829-461-3778</a></li>
+              <li><a href="mailto:josemanuelsuarez110@gmail.com" className="hover:text-corporate-blue transition-colors">Email Oficial</a></li>
+              <li><a href="#" className="hover:text-corporate-blue transition-colors">LinkedIn</a></li>
+              <li><a href="#" className="hover:text-corporate-blue transition-colors">GitHub</a></li>
             </ul>
           </div>
         </div>

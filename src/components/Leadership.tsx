@@ -9,7 +9,7 @@ export const Leadership = () => {
       <div className="flex flex-col lg:flex-row gap-16 items-center">
         <Reveal className="flex-1">
           <div className="relative group">
-            <div className="absolute -inset-4 bg-gradient-to-r from-cyber-blue to-brand-emerald rounded-2xl opacity-20 blur-xl group-hover:opacity-30 transition-opacity" />
+            <div className="absolute -inset-4 bg-gradient-to-r from-corporate-blue to-accent-gold rounded-2xl opacity-20 blur-xl group-hover:opacity-30 transition-opacity" />
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-white/10 bg-slate-900">
               <img 
                 src="/images/jose_turtleneck.jpg" 
@@ -18,7 +18,7 @@ export const Leadership = () => {
               />
               <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-slate-950 to-transparent">
                 <div className="text-2xl font-black text-white uppercase tracking-tighter">ING. JOSÉ MANUEL SUÁREZ</div>
-                <div className="text-cyber-blue font-bold tracking-[0.2em] text-[10px] uppercase">Founder & Leading Consultant</div>
+                <div className="text-corporate-blue font-bold tracking-[0.2em] text-[10px] uppercase">Founder & Leading Consultant</div>
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@ export const Leadership = () => {
             <div className="space-y-4">
               <h2 className="text-4xl md:text-5xl font-black text-white leading-tight">
                 Liderazgo impulsado por <br />
-                <span className="text-cyber-blue">Integridad Digital.</span>
+                <span className="text-corporate-blue">Integridad Digital.</span>
               </h2>
               <p className="text-slate-400 text-lg leading-relaxed">
                 "Como Ingeniero en Sistemas y estratega financiero, mi visión es transformar la complejidad tecnológica en claridad estratégica. No solo protegemos datos;blindamos el futuro de su organización mediante una infraestructura resiliente y cumplimiento riguroso."
@@ -46,7 +46,7 @@ export const Leadership = () => {
             ].map((item, i) => (
               <Reveal key={i} delay={0.3 + (i * 0.1)}>
                 <div className="flex gap-4 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-white/10 transition-colors">
-                  <div className="text-cyber-blue shrink-0">{item.icon}</div>
+                  <div className="text-corporate-blue shrink-0">{item.icon}</div>
                   <div>
                     <div className="font-bold text-white text-sm mb-1">{item.title}</div>
                     <div className="text-xs text-slate-500">{item.text}</div>

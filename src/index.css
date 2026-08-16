@@ -1,11 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-blue: #3b82f6;
-  --color-brand-emerald: #10b981;
-  --color-cyber-blue: #0ea5e9;
-  --color-finance-green: #059669;
-  
+  --color-corporate-blue: #1E3A5F;
+  --color-accent-gold: #C9A227;
+  --color-finance-green: #8A6D1D;
+
   --font-sans: "Outfit", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
@@ -29,10 +28,10 @@
   }
   
   .cyber-gradient {
-    @apply bg-gradient-to-br from-cyber-blue via-brand-blue to-purple-600;
+    @apply bg-gradient-to-br from-corporate-blue via-corporate-blue to-slate-700;
   }
   
   .finance-gradient {
-    @apply bg-gradient-to-br from-finance-green via-brand-emerald to-teal-500;
+    @apply bg-gradient-to-br from-finance-green via-accent-gold to-slate-700;
   }
 }

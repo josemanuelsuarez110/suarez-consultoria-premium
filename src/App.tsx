@@ -17,22 +17,62 @@ function App() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(59,130,246,0.05)_0%,transparent_50%)]" />
       </div>
 
-      {/* Navigation (Floating) */}
-      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 px-8 py-3 rounded-2xl bg-slate-900/50 backdrop-blur-xl border border-white/10 flex items-center gap-12">
-        <div className="flex flex-col items-center -mr-4">
-          <span className="text-xl font-black tracking-[0.2em] text-white">SUAREZ</span>
-          <span className="text-[8px] uppercase tracking-[0.1em] text-cyber-blue font-bold">Servicios y Asesoría</span>
+      {/* Premium Navigation */}
+<nav className="fixed left-1/2 top-4 z-50 w-[calc(100%-24px)] max-w-6xl -translate-x-1/2">
+  <div className="rounded-2xl border border-white/10 bg-slate-950/75 px-4 py-3 shadow-2xl backdrop-blur-2xl md:px-5">
+    <div className="flex items-center justify-between gap-4">
+      
+      {/* Brand */}
+      <a
+        href="#home"
+        className="group flex items-center gap-3"
+      >
+        <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-cyan-400/20 bg-cyan-400/10">
+          <span className="font-black text-cyan-300">S</span>
         </div>
-        <div className="h-6 w-px bg-white/10 hidden md:block" />
-        <div className="hidden md:flex items-center gap-8">
-          <a href="#" className="text-sm font-bold text-white hover:text-cyber-blue transition-colors">Inicio</a>
-          <a href="#credentials" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Credenciales</a>
-          <a href="#services" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Servicios</a>
-          <a href="#tech-stack" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Stack</a>
-          <a href="#blog" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Blog</a>
-          <a href="#contact" className="text-sm font-medium text-slate-400 hover:text-white transition-colors">Contacto</a>
+
+        <div className="hidden sm:block">
+          <div className="text-sm font-black tracking-[0.18em] text-white">
+            SUAREZ
+          </div>
+          <div className="text-[7px] font-bold uppercase tracking-[0.2em] text-slate-500">
+            Technology & Strategy
+          </div>
         </div>
-      </nav>
+      </a>
+
+      {/* Desktop navigation */}
+      <div className="hidden items-center gap-6 lg:flex">
+        {[
+          ['Inicio', 'home'],
+          ['Credenciales', 'credentials'],
+          ['Servicios', 'services'],
+          ['Stack', 'tech-stack'],
+          ['Blog', 'blog'],
+        ].map(([label, id]) => (
+          <a
+            key={id}
+            href={`#${id}`}
+            className="text-[11px] font-bold uppercase tracking-wider text-slate-400 transition-colors hover:text-cyan-300"
+          >
+            {label}
+          </a>
+        ))}
+      </div>
+
+      {/* CTA */}
+      <a
+        href="#contact"
+        className="group inline-flex items-center gap-2 rounded-xl border border-cyan-400/20 bg-cyan-400/10 px-4 py-2.5 text-[10px] font-black uppercase tracking-wider text-cyan-300 transition-all hover:bg-cyan-400 hover:text-slate-950"
+      >
+        Contacto
+        <span className="transition-transform group-hover:translate-x-0.5">
+          →
+        </span>
+      </a>
+    </div>
+  </div>
+</nav>
 
       {/* Main Content Sections */}
       <Hero />
